@@ -14,45 +14,95 @@
     />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
     <title>Hello, world!</title>
   </head>
   <body>
     <div class="container-fluid">
-      <div class="col" id="encabezado">
-        <h2>Restaurant & Loounge</h2>
+      <div class="row" id="encabezado">
+        <nav class="navbar navbar expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item " id="titulo">Restaurant & Lounge</li>
+              </ul>
+            <div class="collapse navbar-collapse"></div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-e"></ul>
+            <a class="navbar brand"><img src="compras.png" class="img responsive"  id="imagenCarro" alt="Responsive image"></a>
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item " id="numeroItems">0</li>
+           </ul>
+           <ul class="navbar-nav mr-auto">
+            <li class="nav-item " >&nbsp items</li>
+           </ul>
+          </div>
+        </nav>
+        <hr>
       </div>
-      <div class="col" id="imagen">
-        <img src="imagen.png" alt="MDN">
+
+      <div class="row" id="imagen">
+        <img src="imagen.png" class="img-fluid" style="width: 100%;height:400px;">
       </div>
-      <div class="col" id="nav">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <hr>
+      <div class="row" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navCat">
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Burguers</a>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item " >
+                <a class="nav-link" id= 0  style="cursor: pointer" >Burguers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tacos</a>
+                <a class="nav-link"  id=1  style="cursor: pointer">Tacos</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Saladas</a>
+              <li class="nav-item" >
+                <a class="nav-link" id=2 style="cursor: pointer">Saladas</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Desserts</a>
+              <li class="nav-item" >
+                <a class="nav-link" id=3  style="cursor: pointer">Desserts</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Drinks and Sides</a>
+              <li class="nav-item" >
+                <a class="nav-link" id=4 style="cursor: pointer">Drinks and Sides</a>
               </li>
             </ul>
           </div>
         </nav>
-      <div class="col" id="info"></div>
+        </div>
+      <hr>
+        <div class="row" id="tituloCat">
+
+        </div>
+        <div class="modal fade" id="mensajeConfirm" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Cancel the order</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Are you sure about canceling the order?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" id="cancelOrder">Yes, I want to cancel the order</button>
+                <button type="button" class="btn btn-light" data-dismiss="modal">No, I want to continue adding products</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <footer>
+        <p style="text-align: center;">
+          Contact us: +57 3102105253 - info@restaurant.com - @restaurant
+        </p>
+      </footer>
     </div>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-      crossorigin="anonymous"
-    ></script>
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
     <script src="main.js"></script>
   </body>
 </html>

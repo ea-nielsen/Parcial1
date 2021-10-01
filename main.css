@@ -1,3 +1,23 @@
-h2{
-    
+#titulo{
+    font-family: 'Satisfy', cursive;
+    font-size:40px;
+
+}
+#imagenCarro{
+    width: 50px;
+    height: 50px;
+
+}
+#tituloCat{
+    text-align: center;
+}
+#navCat{
+    padding: 20px;
+}
+#imagenesCat{
+    width: 200px;
+    height: 200px;
+}
+#cardsCat{
+    border-radius: 2px;
 }
