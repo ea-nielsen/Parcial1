@@ -280,4 +280,13 @@ fetch(
       ultimo.appendChild(fila);
       lugar.appendChild(ultimo);
     }
+
+    let botonCancelar = document.getElementById("cancelar");
+    botonCancelar.addEventListener("click", function (event) {
+        event.preventDefault();
+        dict = {};
+        actualizarItems(0);
+        cargarOrden();
+        console.log("Se cancela la orden");
+      });
   });
